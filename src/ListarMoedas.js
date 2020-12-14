@@ -47,7 +47,7 @@ function ListarMoedas() {
   }
 
   return MOEDAS.sort(compare).map((moeda) => (
-    <option value="{moeda.sigla}" key={moeda.sigla}>
+    <option value={moeda.sigla} key={moeda.sigla}>
       {moeda.descricao}
     </option>
   ));
